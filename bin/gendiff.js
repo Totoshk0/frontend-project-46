@@ -8,6 +8,12 @@ program
   .name("gendiff")
   .description("Compares two configuration files and shows a difference.")
   .version("1.0.0", "-V, --version", "output the version number")
-  .helpOption("-h, --help", "display help for command");
+  .option("-f, --format <type>", "output format", "stylish")
+  .argument("<filepath1>", "path to first file")
+  .argument("<filepath2>", "path to second file")
+  .action((filepath1, filepath2, options) => {
+    console.log(`Comparing ${filepath1} with ${filepath2}`);
+    console.log(`Format: ${options.format}`);
+  });
 
 program.parse(process.argv);
