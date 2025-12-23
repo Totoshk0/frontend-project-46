@@ -1,0 +1,3 @@
+timeout: 15
+verbose: true
+host: hexlet.ru
