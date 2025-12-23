@@ -5,11 +5,11 @@
   "main": "./src/index.js",
   "type": "module",
   "bin": {
-  "gendiff": "./bin/gendiff.js"
+    "gendiff": "./bin/gendiff.js"
   },
   "exports": {
-  ".": "./src/index.js"
-},
+    ".": "./src/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Totoshk0/frontend-project-46#readme",
   "dependencies": {
-    "commander": "^14.0.2"
+    "commander": "^14.0.2",
+    "js-yaml": "^4.1.1"
   }
 }
